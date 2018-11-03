@@ -9,7 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: wenteng/springtest
+      tag: wentengedu/springtest
       pushRemote: true
       registry: index.docker.io
     env:
