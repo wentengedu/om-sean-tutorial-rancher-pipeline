@@ -11,7 +11,7 @@ stages:
       buildContext: .
       tag: wenteng/springtest
       pushRemote: true
-      registry: 127.0.0.1:34142
+      registry: index.docker.io
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
