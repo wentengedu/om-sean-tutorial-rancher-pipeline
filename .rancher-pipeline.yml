@@ -1,0 +1,17 @@
+stages:
+- name: compile
+  steps:
+  - runScriptConfig:
+      image: maven:3-jdk-8
+      shellScript: mvn clean package
+- name: publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: wenteng/springtest
+      pushRemote: true
+      registry: docker.io
+    env:
+      PLUGIN_DEBUG: "true"
+      PLUGIN_INSECURE: "true"
