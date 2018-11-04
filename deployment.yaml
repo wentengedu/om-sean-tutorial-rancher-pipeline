@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: docker pull wentengedu/springtest
+        image: wentengedu/springtest
         ports:
         - containerPort: 8080
  
